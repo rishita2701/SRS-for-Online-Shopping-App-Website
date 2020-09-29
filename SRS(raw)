@@ -1,0 +1,75 @@
+1. Introduction:
+The computers and computer applications are finding its voyage to each and every field of mankind, where the data and information are the primary necessities. The actual processing of the system becomes very useful to its users because manipulation and utilization of data in a meaningful way is the need of each and every organization.
+1.1. Purpose:
+The purpose of this system is to make online shopping available to all and make innovative products available. It will also improve customers’ access to affordable shopping.
+1.2. Scope :
+The document is the one that describes the requirements along with interfaces for the system. It is meant for use by the developers and will be the basis for validating the final delivered system.
+1.3. Overview :
+The system helps in buying of goods, products and services online by choosing the listed products from website (E-Commerce site).    
+
+2.     Overall description :
+2.1. Product Perspective :
+The proposed system is a solution carry out buying/ selling products online.
+2.2. Product Functions :
+The system allows the user to buy/sell products online across internet connection globally.
+2.3. User Characteristics :
+     There are 3 kinds of users for the proposed system.
+•	Administrators:
+Administrators are the ones who adds or administers the categories for the products, and administers the Vendors.
+•	Vendors/Sellers :
+Vendors/Sellers will add their products to the database, which will be seen in the website to the end users or say customers who can buy the products by selecting the one they need. Vendors will have the special privileges than the end users, and have ability to manage the products added by them.
+•	End Users/Customers:
+The end user will be the one who visits the website and buys products online from the ones added by the Vendors/Sellers.
+
+     2.4. General Constraints :
+•	The main constraint here would be the checking the genuineness of the buyer, which is not always possible. There can be security risks involved.
+•	The developed system should run under any platform (Unix, Linux, Mac, Windows etc.. ) that contains a web browser which supports PHP, JavaScript and AJAX.
+      2.5. Assumptions and Dependencies
+•	The details related to the product, customer, payment and service transaction provided manually.
+•	Administrator is created in the system already.
+•	Roles and tasks are predefined.
+3.  Specific Requirements :
+3.1.     External Interface Requirements :
+3.1.1.   User Interfaces:
+Each part of the user interface intends to be as user friendly as possible. The fonts and buttons used will be intended to be very fast and easy to load on web pages. The pages will be kept light in space so that it won’t take a long time for the page to load.
+3.1.2.   Hardware Interfaces :
+•	Processor : Pentium or  Higher.
+•	RAM : 312MB or Higher.
+3.1.3.   Software Interfaces :
+•	Operating System :  Unix, Linux, Mac, Windows etc..
+•	Development tool : PHP : Hypertext Preprocessor, JavaScript, Ajax
+•	Data Base : MySQL
+3.1.4. Communication Interface :
+The Website Order system shall send an e-mail confirmation to the customer that the items they ordered will be delivered to the shipping address along with user identification.
+3.2.   Functional Requirements :
+3.2.1.   Master Maintenance :
+This module consists of information about the products and services. This includes two sub-modules, Product master and Price master.
+3.2.1.1.   Product Master :
+Product master includes the information about particular product, such as product number, item, name, category, images of products, description, features, constraints of products, which are to be displayed on the website.
+3.2.1.2.    Price master :
+Price master deals with the cost of the product, discounts applicable for the particular product of a vendor/seller.
+3.2.2.   Transactions : 
+All transactions undergoing in the website will be controlled and managed by this module. Transactions in the sense, Shopping Cart management.
+3.2.3.   Reporting :
+This module deals with report management of the entire system. This includes three sub-modules Stock Report, Order Report and Delivery Report.
+3.2.3.1.    Order  Report : 
+Order Report will have the list of products ordered and the customer details who have bought that product, which are undelivered.
+3.2.3.2.    Delivery Report : 
+Delivery Reports will generate products list, which are delivered to customers.
+3.2.4.   Housekeeping Module: 
+This module deals with backing up of data for future references and hence to reduce the database size
+3.3. Design Constraints :
+There are few constraints that the system should follow. They are:
+•	All the inputs should be checked for validation and messages should be given for the improper data. The invalid data are to be ignored and error messages should be given.
+•	Details provided by the vendor during his sign up should be stored in database.
+•	While adding the products to the system, mandatory fields must be checked for validation whether the vendor has filled appropriate data in these mandatory fields. If not, proper error message should be displayed or else the data is to be stored in database for later retrieval.
+•	All mandatory fields should be filled by customer, while buying the items from the cart.
+4. Other Non-Functional Requirements:
+4.1. Performance Requirements:
+The basic objective of setting normalization in performance requirements is to reduce redundancy which means that information is to be stored only once. Storing information several times leads to wastage of storage space and increase in the total size of the data stored.
+
+If a database is not properly designed it can give rise to modification anomalies. Modification anomalies arise when data is added to, changed or deleted from a database table. Similarly, in traditional databases as well as improperly designed relational databases, data redundancy can be a problem. These can be eliminated by normalizing a database.
+4.2. Safety Requirements:
+If there is extensive damage to a wide portion of the database due to catastrophic failure, such as a disk crash, the recovery method restores a past copy of the database that was backed up to archival storage (typically tape) and reconstructs a more current state by reapplying or redoing the operations of committed transactions from the backed up log, up to the time of failure.
+4.3. Security Requirements:
+Security systems need database storage just like many other applications. However, the special requirements of the security market mean that vendors must choose their database partner carefully. The use of Firebase will handle security requirements carefully.
